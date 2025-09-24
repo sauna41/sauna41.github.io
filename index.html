@@ -1,16 +1,45 @@
-## Etusivu 👋
 
-<!--
-**sauna41/sauna41** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!DOCTYPE html>
+<html lang="fi">
 
-Here are some ideas to get you started:
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interaktiivinen turistikartta</title>
+  <link rel="stylesheet" href="karttaCSS.css">
+</head>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+<body class="kartta">
+  <h1 class="h1">Helsingin nähtävyyksiä</h1>
+  <p>Tässä kartassa näet <strong><span>kolme</span></strong> kiinnostavaa paikkaa Helsingissä.<br>
+    Vie kursori painikkeen päälle nähdäksesi paikan nimen ja klikkaa avataksesi lisätietoja.<br><br>
+    Takaisin karttaan pääset klikkaamalla kohdesivuilta löytyvistä nuolista. </p>
+
+  <div class="map-container">
+    <!-- Kartta -->
+    <img src="hkimap.png" alt="Helsingin kartta" class="map-image">
+
+    <!-- Painikkeet -->
+    <a href="linnanmaki.html" class="button" id="button1">
+      1
+      <span class="tooltip">Linnanmäki</span>
+
+    </a>
+    <a href="rautatieasema.html" class="button" id="button2">
+      2
+      <span class="tooltip">Rautatieasema</span>
+
+    </a>
+    <a href="kaivopuisto.html" class="button" id="button3">
+      3
+      <span class="tooltip">Kaivopuisto</span>
+    <a href="https://fi.wikipedia.org/wiki/Helsinki" class="homebutton" id="button4">
+      Helsinki
+      <span class="tooltip">Helsinki</span>
+    </a>
+
+    </a>
+  </div>
+</body>
+
+</html>
