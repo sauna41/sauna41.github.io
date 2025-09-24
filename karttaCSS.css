@@ -1,0 +1,365 @@
+/* ----------------------------
+   YLEISET KARTTAOSAT (.kartta)
+---------------------------- */
+.kartta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: antiquewhite;
+    text-align: center; /* varmuudeksi */
+}
+
+.kartta .map-container {
+    position: relative;
+    display: inline-block;
+}
+
+.kartta .map-image {
+    max-width: 35rem;
+    max-height: 90%;
+    height: auto;
+    border-radius: 20%;
+}
+
+
+.kartta .map-container {
+    position: relative;
+    display: inline-block;
+}
+
+.kartta .map-image {
+    max-width: 35rem;
+    height: auto;
+    border-radius: 20%;
+}
+
+.kartta h1 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.kartta .homebutton {
+    position: absolute;
+    background-color: rgb(250, 214, 166);
+    color: black;
+    border: none;
+    font-size: 1.5rem;
+    width: 260px;
+    height: 70px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+
+.kartta .button {
+    position: absolute;
+    background-color: rgb(250, 214, 166);
+    color: black;
+    border: none;
+    font-size: 2rem;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.kartta .tooltip {
+    visibility: hidden;
+    opacity: 0;
+    max-width: 200px;
+    font-size: 1rem;
+    background-color: rgb(0, 0, 0);
+    color: rgb(250, 214, 166);
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px 10px;
+    position: absolute;
+    z-index: 0;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.kartta .tooltip::after {
+    content: "";
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: rgb(250, 214, 166) transparent transparent transparent;
+}
+
+/* Karttapainikkeiden sijainnit */
+.kartta #button1 {
+    top: 12%;
+    left: 54%;
+}
+
+.kartta #button2 {
+    top: 40%;
+    left: 54%;
+}
+
+.kartta #button3 {
+    top: 63%;
+    left: 72%;
+}
+
+.kartta #button4 {
+    top: 79%;
+    left: 27%;
+}
+
+.kartta .button:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ----------------------------
+   KAIVOPUISTO
+---------------------------- */
+
+body.kaivopuisto header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0a878787;
+    color: rgb(220, 26, 26);
+}
+
+body.kaivopuisto header a{
+    color:#000000;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    
+
+body.kaivopuisto {
+    background-color: #8baa8b;
+    color: #15441e;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+
+body.kaivopuisto .image-kaivopuisto {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 500px;
+    box-shadow: 80px 40px 18px rgba(0, 0, 0, 0.3);
+    margin: 20px auto;
+    display: block;
+}
+
+body.kaivopuisto .button{
+    background-color: white;
+    color: black
+}
+
+/* ----------------------------
+   LINTSI
+---------------------------- */
+body.lintsi {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f0f0f0b3;
+    line-height: 1.6;
+}
+
+body.lintsi header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #333;
+    color: white;
+}
+
+body.lintsi main {
+    max-width: 800px;
+    margin: auto;
+    padding-top: 1rem;
+    background: rgb(227, 226, 226);
+    margin-top: 1.5rem;
+    border: 30px solid rgb(227, 226, 226);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+body.lintsi h1 {
+    font-size: 50px;
+    text-decoration: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+}
+
+body.lintsi h2,
+body.lintsi h3,
+body.lintsi h4,
+body.lintsi h5,
+body.lintsi h6 {
+    text-decoration: underline;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+}
+
+body.lintsi img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 90%;
+    height: auto;
+    border-radius: 10px;
+}
+
+body.lintsi footer {
+    background: #000000;
+    color: white;
+    text-align: center;
+    padding-top: 1rem;
+    font-size: 50px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+body.lintsi a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+body.lintsi a:hover {
+    text-decoration: underline;
+}
+
+body.lintsi a.button{
+    background-color: white;
+    color: #000000
+}
+/* ----------------------------
+   RAUTATIEASEMA
+---------------------------- */
+body.rta {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    background-color: #000000;
+    line-height: 1.6;
+}
+
+body.rta header {
+    background: #006633;
+    color: #ffffff;
+    padding: 1rem;
+    text-align: center;
+}
+
+body.rta main {
+    max-width: 800px;
+    margin: auto;
+    padding: 1rem;
+    background: #006633;
+    border: 30px solid black;
+    color: white;
+}
+
+body.rta img {
+    display: block;
+    margin: 1rem auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+body.rta footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    margin-top: 1rem;
+}
+
+body.rta a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+body.rta a:hover {
+    text-decoration: underline;
+}
+
+body.rta .button {
+    background-color: #000000;
+}
+/* ----------------------------
+   YHTENÄINEN "PALAA TAKASIN" -PAINIKE
+---------------------------- */
+body.kaivopuisto .button,
+body.lintsi .button,
+body.rta .button {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.2);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s;
+    text-decoration: none;
+}
+
+body.kaivopuisto .button .tooltip,
+body.lintsi .button .tooltip,
+body.rta .button .tooltip {
+    position: absolute;
+    font-weight: bold;
+    top: 31%;
+    left: 110%;
+    transform: translateY(-50%);
+    background-color: #fafafa00;
+    color: #ffffff;
+    padding: 30px 5px;
+    border-radius: 5px;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+body.kaivopuisto .button:hover .tooltip,
+body.lintsi .button:hover .tooltip,
+body.rta .button:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+    text-decoration: none;
+    top: 30px;
+}
+
+body.kaivopuisto .tooltip::after,
+body.lintsi .tooltip::after,
+body.rta .tooltip::after {
+    content: none;
+    text-decoration: none;
+}
+
+body.kaivopuisto .arrow,
+body.lintsi .arrow,
+body.rta .arrow {
+    font-size: 30px;
+    position: relative;
+    bottom: 1%; /*Siirrä kuviota ylösalas */
+}
